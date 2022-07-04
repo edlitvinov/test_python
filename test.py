@@ -83,14 +83,25 @@ import turtle
 #     turtle.right(45)
 
 # Розетка
+# import random
+# for x in range(0, 10):
+#     for i in range(0, 8):
+#         turtle.color(random.choice(
+#             ["red", "green", "blue", "black"]))
+#         turtle.forward(100)
+#         turtle.right(45)
+#     turtle.right(36)
+# turtle.hideturtle()
+
+# Рандомный Узор
 import random
-for x in range(0, 10):
-    for i in range(0, 8):
-        turtle.color(random.choice(
-            ["red", "green", "blue", "black"]))
-        turtle.forward(100)
-        turtle.right(45)
-    turtle.right(36)
-turtle.hideturtle()
+
+lines = random.randint(5, 50)
+
+for x in range(0, lines):
+    lenght = random.randint(25, 100)
+    rotate = random.randint(1, 365)
+    turtle.forward(lenght)
+    turtle.right(rotate)
 
 turtle.exitonclick()
