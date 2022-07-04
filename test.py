@@ -30,4 +30,9 @@ import turtle
 # turtle.forward(100)
 # turtle.pendown()
 
-# turtle.exitonclick()
+# Звезда
+for i in range(0, 5):
+    turtle.forward(150)
+    turtle.right(144)
+
+turtle.exitonclick()
