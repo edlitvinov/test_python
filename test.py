@@ -127,18 +127,27 @@
 # del items[getrid]
 # print(items)
 
-dishes = {}
-food1 = input("Введите любимое блюдо: ")
-dishes[1] = food1
-food2 = input("Введите любимое блюдо: ")
-dishes[2] = food2
-food3 = input("Введите любимое блюдо: ")
-dishes[3] = food3
-food4 = input("Введите любимое блюдо: ")
-dishes[4] = food4
-food5 = input("Введите любимое блюдо: ")
-dishes[5] = food5
-print(dishes)
-dislike = int(input("Какие блюда вам не нравятся?: "))
-del dishes[dislike]
-print(sorted(dishes.values()))
+# dishes = {}
+# food1 = input("Введите любимое блюдо: ")
+# dishes[1] = food1
+# food2 = input("Введите любимое блюдо: ")
+# dishes[2] = food2
+# food3 = input("Введите любимое блюдо: ")
+# dishes[3] = food3
+# food4 = input("Введите любимое блюдо: ")
+# dishes[4] = food4
+# food5 = input("Введите любимое блюдо: ")
+# dishes[5] = food5
+# print(dishes)
+# dislike = int(input("Какие блюда вам не нравятся?: "))
+# del dishes[dislike]
+# print(sorted(dishes.values()))
+
+# Примеры со строками
+
+name = input("Введите ваше имя: ")
+print("В вашем имени:", len(name), "символов")
+lastName = input("Введите вашу фамилию: ")
+print("Ввашей фамилии:", len(lastName), "символов")
+a = name + " " + lastName
+print("В вашем имени и фамилии:", len(a), "символов")
