@@ -1,4 +1,4 @@
-import turtle
+# import turtle
 
 # turtle.color("black", "red")
 # turtle.begin_fill()
@@ -94,14 +94,51 @@ import turtle
 # turtle.hideturtle()
 
 # Рандомный Узор
-import random
+# import random
 
-lines = random.randint(5, 50)
+# lines = random.randint(5, 50)
 
-for x in range(0, lines):
-    lenght = random.randint(25, 100)
-    rotate = random.randint(1, 365)
-    turtle.forward(lenght)
-    turtle.right(rotate)
+# for x in range(0, lines):
+#     lenght = random.randint(25, 100)
+#     rotate = random.randint(1, 365)
+#     turtle.forward(lenght)
+#     turtle.right(rotate)
 
-turtle.exitonclick()
+# turtle.exitonclick()
+
+
+# Кортеж
+# country = ("USA", "China", "England")
+# print(country)
+# d = input("Введите любое название страны из списка country: ")
+# print(country.index(d))
+# b = int(input("Введите index из кортежа coutry: "))
+# print(country[b])
+
+# sport = ["Тенис", "Гребля"]
+# sport.append(input("Ваш любимый вид спорта?: "))
+# sport.sort()
+# print(sport)
+
+# items = ["математика", "физика", "химия", "литература", "физкультура"]
+# print(items)
+# dislike = (input("Выберите предметы каторые вым не нравятся: "))
+# getrid = items.index(dislike)
+# del items[getrid]
+# print(items)
+
+dishes = {}
+food1 = input("Введите любимое блюдо: ")
+dishes[1] = food1
+food2 = input("Введите любимое блюдо: ")
+dishes[2] = food2
+food3 = input("Введите любимое блюдо: ")
+dishes[3] = food3
+food4 = input("Введите любимое блюдо: ")
+dishes[4] = food4
+food5 = input("Введите любимое блюдо: ")
+dishes[5] = food5
+print(dishes)
+dislike = int(input("Какие блюда вам не нравятся?: "))
+del dishes[dislike]
+print(sorted(dishes.values()))
